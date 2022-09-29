@@ -7,7 +7,7 @@ import { Course } from './../model/course';
 @Injectable({
   providedIn: 'root'
 })
-export class CousesService {
+export class CoursesService {
 
   //private readonly API = '/assets/Cursos.json';
   private readonly API = '/api/curso';
@@ -21,6 +21,18 @@ export class CousesService {
     //delay(1000),
     tap(Course => console.log(Course))
    );
+  }
+
+  save(record: Course ){
+    return this.httpClient
+        .post<Course>(this.API,record)
+        .pipe(first());
+  }
+
+  delete(record: Course){
+    return this.httpClient
+        .delete<Course>(this.API)
+        .pipe(first());
   }
 
 }
