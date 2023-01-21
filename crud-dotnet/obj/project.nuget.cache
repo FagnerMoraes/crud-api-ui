@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZTt4VxZx3FtHOiSuFrqXCHmcZ7YWS7Ci9ATi7SI0b9xpl1wJF7s8uzdCywlugvKapllFL0lWtP9iV5cZxELEdw==",
+  "dgSpecHash": "OOSCvVrpzeaky8Bnd3M9c98/z6Dn8qog5jS/dYji1nT1gaMF8U/79LHfR5hDcYegULzga/j+bS29POh02Zof3g==",
   "success": true,
-  "projectFilePath": "C:\\dev\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj",
+  "projectFilePath": "C:\\dev\\net6\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fagmc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fagmc\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
@@ -177,7 +177,11 @@
     "C:\\Users\\fagmc\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\fagmc\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\fagmc\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\fagmc\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\fagmc\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\fagmc\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\fagmc\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\fagmc\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\fagmc\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.11\\microsoft.netcore.app.host.win-x64.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }

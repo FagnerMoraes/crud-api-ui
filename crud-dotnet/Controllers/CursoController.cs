@@ -28,7 +28,7 @@ namespace crud_dotnet.Controllers
         }
 
         // GET: api/Curso/5
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<Curso>> GetCurso(int id)
         {
           if (_context.cursos == null)
@@ -47,7 +47,7 @@ namespace crud_dotnet.Controllers
 
         // PUT: api/Curso/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> PutCurso(int id, Curso curso)
         {
             if (id != curso.Id)
@@ -92,7 +92,7 @@ namespace crud_dotnet.Controllers
         }
 
         // DELETE: api/Curso/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteCurso(int id)
         {
             if (_context.cursos == null)
@@ -110,6 +110,8 @@ namespace crud_dotnet.Controllers
 
             return NoContent();
         }
+
+       
 
         private bool CursoExists(int id)
         {

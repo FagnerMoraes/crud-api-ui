@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj": {}
+    "C:\\dev\\net6\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj": {}
   },
   "projects": {
-    "C:\\dev\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj": {
+    "C:\\dev\\net6\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj",
+        "projectUniqueName": "C:\\dev\\net6\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj",
         "projectName": "crud-dotnet",
-        "projectPath": "C:\\dev\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj",
+        "projectPath": "C:\\dev\\net6\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj",
         "packagesPath": "C:\\Users\\fagmc\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\obj\\",
+        "outputPath": "C:\\dev\\net6\\AngularDotnetProjects\\crud-api-ui\\crud-dotnet\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\fagmc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -74,6 +77,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -82,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
