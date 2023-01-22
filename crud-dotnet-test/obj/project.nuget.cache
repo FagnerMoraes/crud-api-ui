@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0s64jjpfghxZlRmleahj7gI6F0ZjAw818jRbsbMt2XadKmI1tA1ux20KE5CAee3QaIPIWh+U4Juu9NDVdYox4Q==",
+  "dgSpecHash": "tPSFN9H9dwbIX9hLOPEDugrMmWd8M5FNpw5x0aSUvqkS6Iqw95K4/a9y9lWbnHpybzOIk7Ey59+LunGU48e2zg==",
   "success": true,
-  "projectFilePath": "c:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet-test\\crud-dotnet-test.csproj",
+  "projectFilePath": "C:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet-test\\crud-dotnet-test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fagner\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\fagner\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",

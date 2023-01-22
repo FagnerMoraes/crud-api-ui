@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { catchError, Observable, of } from 'rxjs';
 
@@ -14,15 +15,22 @@ import { CoursesService } from '../../services/courses.service';
 })
 export class CoursesComponent implements OnInit {
 
-  courses$: Observable<Course[]>;
+  courses$: Observable<Course[]> | null = null;
 
   constructor(
 
     private CoursesService: CoursesService,
     public dialog: MatDialog,
+    private snackBar: MatSnackBar,
     private router: Router,
     private route: ActivatedRoute
      ) {
+
+      this.refresh();
+
+     }
+
+   refresh(){
 
     this.courses$ = this.CoursesService.list()
     .pipe(
@@ -31,8 +39,8 @@ export class CoursesComponent implements OnInit {
         return of([])
       })
     );
-   }
 
+   }
 
    OnError(errorMsg: string) {
     this.dialog.open(ErrorDialogComponent, {
@@ -47,8 +55,22 @@ export class CoursesComponent implements OnInit {
     this.router.navigate(['new'], {relativeTo: this.route});
   }
 
-  onEdit(couse: Course){
-    this.router.navigate(['edit',couse._id], {relativeTo: this.route});
+  onEdit(course: Course){
+    this.router.navigate(['edit',course._id], {relativeTo: this.route});
+  }
+  onRemove(course: Course){
+    this.CoursesService.remove(course._id).subscribe(
+      () => {
+        this.refresh();
+        this.snackBar.open("Curso deletado com sucesso",'X',
+        {duration:2000,
+         verticalPosition: 'top',
+         horizontalPosition: 'center'
+        });
+
+      },
+      () => this.OnError('Erro ao tentar remover curso.')
+    );
   }
 
 }

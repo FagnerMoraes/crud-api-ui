@@ -88,7 +88,7 @@ namespace crud_dotnet.Controllers
             _context.cursos.Add(curso);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCurso", new { id = curso.Id }, curso);
+            return CreatedAtAction(nameof(GetCurso), new { id = curso.Id }, curso);
         }
 
         // DELETE: api/Curso/5

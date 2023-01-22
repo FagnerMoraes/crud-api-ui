@@ -11156,11 +11156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet-test\\crud-dotnet-test.csproj",
+      "projectUniqueName": "C:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet-test\\crud-dotnet-test.csproj",
       "projectName": "crud-dotnet-test",
-      "projectPath": "c:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet-test\\crud-dotnet-test.csproj",
+      "projectPath": "C:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet-test\\crud-dotnet-test.csproj",
       "packagesPath": "C:\\Users\\fagner\\.nuget\\packages\\",
-      "outputPath": "c:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet-test\\obj\\",
+      "outputPath": "C:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet-test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fagner\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11177,8 +11177,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj": {
-              "projectPath": "c:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj"
+            "C:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj": {
+              "projectPath": "C:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj"
             }
           }
         }

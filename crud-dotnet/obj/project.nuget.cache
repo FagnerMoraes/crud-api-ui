@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+254iZWjWmwsqF0829O2ok3GKXMV+0zmKUxziCLr3Sa0u8B5qGYi3hLF7GfWFmi+VOyXgXgIBEtst69izBkRQA==",
+  "dgSpecHash": "PbStnYrkrkL2DreRh+PVwRE/U/sTmYB2hDPTQjP1r9AQ+nMK2Hrym53uJKXSW6VYa9li9sAtl9xSI7aKGQT3CA==",
   "success": true,
-  "projectFilePath": "c:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj",
+  "projectFilePath": "C:\\dev\\angular-projects\\crud-api-ui\\crud-dotnet\\crud-dotnet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fagner\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fagner\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -40,6 +40,7 @@ export class CoursesService {
 
 
   private create(record: Partial<Course>){
+    record._id = '0';
     return this.httpClient
     .post<Course>(this.API,record)
     .pipe(first());
@@ -51,12 +52,10 @@ export class CoursesService {
     .pipe(first());
   }
 
-
-
-  delete(record: Course){
+  remove(id: string) {
     return this.httpClient
-        .delete<Course>(this.API)
-        .pipe(first());
+    .delete(`${this.API}/${id}`)
+    .pipe(first());
   }
 
 }
