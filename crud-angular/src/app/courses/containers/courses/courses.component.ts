@@ -5,7 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { catchError, Observable, of } from 'rxjs';
 
 import { ErrorDialogComponent } from '../../../shared/components/error-dialog/error-dialog.component';
-import { ConfirmationDialogComponent } from '../../components/confirmation-dialog/confirmation-dialog.component';
+import { ConfirmationDialogComponent } from '../../../shared/components/confirmation-dialog/confirmation-dialog.component';
 import { Course } from '../../model/course';
 import { CoursesService } from '../../services/courses.service';
 
@@ -62,7 +62,7 @@ export class CoursesComponent implements OnInit {
   onRemove(course: Course){
 
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
-      data: 'Tem certeza que quer remover',
+      data: 'Tem certeza que quer remover?',
     });
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
@@ -71,16 +71,14 @@ export class CoursesComponent implements OnInit {
           () => {
             this.refresh();
             this.snackBar.open("Curso deletado com sucesso",'X',
-            {duration:2000,
+            {duration:5000,
              verticalPosition: 'top',
              horizontalPosition: 'center'
             });
-
           },
           () => this.OnError('Erro ao tentar remover curso.')
         );
       }
     });
   }
-
 }
