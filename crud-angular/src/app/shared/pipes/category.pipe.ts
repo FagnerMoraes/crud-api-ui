@@ -13,7 +13,7 @@ export class CategoryPipe implements PipeTransform {
       case 'O.S.' : return 'memory';
       case 'IoT' : return 'smart_toy';
       case 'Games' : return 'videogame_asset';
-      case 'Banco de Dados': return 'save';
+      case 'Database': return 'save';
     }
     return 'code';
   }

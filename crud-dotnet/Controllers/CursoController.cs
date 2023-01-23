@@ -18,7 +18,7 @@ namespace crud_dotnet.Controllers
 
         // GET: api/Curso
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Curso>>> Getcursos()
+        public async Task<ActionResult<IEnumerable<Course>>> Getcursos()
         {
           if (_context.cursos == null)
           {
@@ -29,7 +29,7 @@ namespace crud_dotnet.Controllers
 
         // GET: api/Curso/5
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<Curso>> GetCurso(int id)
+        public async Task<ActionResult<Course>> GetCurso(int id)
         {
           if (_context.cursos == null)
           {
@@ -48,7 +48,7 @@ namespace crud_dotnet.Controllers
         // PUT: api/Curso/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> PutCurso(int id, Curso curso)
+        public async Task<IActionResult> PutCurso(int id, Course curso)
         {
             if (id != curso.Id)
             {
@@ -79,7 +79,7 @@ namespace crud_dotnet.Controllers
         // POST: api/Curso
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Curso>> PostCurso(Curso curso)
+        public async Task<ActionResult<Course>> PostCurso(Course curso)
         {
           if (_context.cursos == null)
           {

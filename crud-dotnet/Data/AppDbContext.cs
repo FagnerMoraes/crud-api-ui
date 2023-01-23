@@ -15,20 +15,20 @@ namespace crud_dotnet.Data
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
-            modelBuilder.Entity<Curso>().HasData(
-                new Curso{
+            modelBuilder.Entity<Course>().HasData(
+                new Course{
                     Id = 1,
                     Name = "Dotnet API",
-                    Categoria = "Back End"
+                    Category = "Back End"
                 },
-                new Curso{
+                new Course{
                     Id = 2,
                     Name = "Angular",
-                    Categoria = "Front End"
+                    Category = "Front End"
                 }
             );
         }
 
-        public DbSet<Curso> cursos{get; set;} = null!;
+        public DbSet<Course> cursos{get; set;} = null!;
     }
 }

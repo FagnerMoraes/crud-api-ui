@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace crud_dotnet.Models
 {
-    public class Curso
+    public class Course
     {
         [JsonPropertyName("_id")]
         public int Id { get; set; }
@@ -16,6 +16,6 @@ namespace crud_dotnet.Models
         public string? Name { get; set; }
         [Required]
         [StringLength(200)]
-        public string? Categoria { get; set; }
+        public string? Category { get; set; }
     }
 }

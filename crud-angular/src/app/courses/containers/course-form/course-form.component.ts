@@ -21,7 +21,7 @@ export class CourseFormComponent implements OnInit {
                Validators.minLength(5),
                Validators.maxLength(100),
               Validators.pattern('[a-zA-Z ]*')]],
-    categoria: ['',[Validators.required]]
+    category: ['',[Validators.required]]
   });
 
 
@@ -40,7 +40,7 @@ export class CourseFormComponent implements OnInit {
     this.form.setValue({
       _id: course._id,
       name: course.name,
-      categoria: course.categoria
+      category: course.category
     });
   }
 
